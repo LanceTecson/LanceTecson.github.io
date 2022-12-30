@@ -1,2 +1,4 @@
 # Lance Oliver Tecson 
-### <sub>(yes, my first name is two names)</sub>
+##### <sup>(yes, my first name is two names)</sup>
+### Hello, reader! 
+#RRGGBB
