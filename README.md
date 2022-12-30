@@ -1,1 +1,1 @@
-# Lance Oliver Tecson (yes, my first name is two names)
+# Lance Oliver Tecson <sub>yes, my first name is two names)</sub>
