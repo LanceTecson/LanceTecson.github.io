@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+}
+
+#intro{
+    background-image: url(./pics/No-1-royal-red-and-blue-Mark-Rothko.jpeg);
+    width: 100vw;
+    height: 100vh;
+}
+
+#about-me{
+    background-image: url(./pics/untitled-1952.jpeg);
+    width: 100vw;
+    height: 100vh;
+}
