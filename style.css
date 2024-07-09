@@ -1,20 +1,164 @@
-body{
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+:root{
+    --bg: hsl(227, 63%, 18%);
+    --text:  hsl(42, 36%, 89%);
+    --accent: hsl(42, 73%, 48%);
+    --accent-transparent: hsla(42, 73%, 48%, 0.96);
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 #intro{
-    background-image: url(./pics/No-1-royal-red-and-blue-Mark-Rothko.jpeg);
     width: 100vw;
     height: 100vh;
-    margin: 0;
+    display: flex;
+    place-content: center;
 }
 
-#about-me{
-    background-image: url(./pics/untitled-1952.jpeg);
-    width: 100vw;
-    height: 100vh;
+.container{
+    display: flex;
+    place-items: center;
+    gap: 1rem;
+}
+
+#me{
+    border-radius: 13%;
+}
+
+.textCont{
+    display: flex;
+    place-items: center;
+    text-justify: inter-word;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
 }
 
 h1{
-    margin: 0;
+    font-size: 6rem;
+    position: relative;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.75rem;
+}
+
+#about h2{
+    text-align: center;
+}
+
+#about{
+    width: 100vw;
+    height: 100vh;
+}
+
+#cool{
+    position: absolute;
+    color: var(--accent-transparent);
+    background-color: transparent;
+    left: .25rem;
+}
+
+.contacts{
+    display: flex;
+    place-items: center;
+    gap: 2rem;
+}
+
+.link{
+    display: inline;
+    height: 3rem;
+    width: auto;
+}
+
+#resume{
+    display: inline;
+    background-color: var(--accent);
+    border-radius: 13%;
+    font-size: 3rem;
+    text-decoration: none;
+    height: fit-content;
+}
+
+#items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    justify-content: space-around;
+    gap: 6rem;
+}
+
+.item{
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-radius: 13%;
+}
+
+.item img{
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+}
+
+.item a{
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+}
+
+.overlay{
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    inset: 0;
+    position: absolute;
+    background: var(--accent-transparent);
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+.overlay h1{
+    font-size: 2rem;
+    background-color: transparent;
+    text-justify: inter-word;
+    text-align:center;
+}
+
+.overlay p, .overlay b{
+    font-size: 1rem;
+    background-color: transparent;
+    text-justify: inter-word;
+    text-align: center;
+}
+
+.porfolio{
+    display: flex;
+    place-items: center;
+}
+
+.portfolio h1{
+    text-align:center;
 }
