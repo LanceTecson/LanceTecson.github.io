@@ -8,6 +8,7 @@
 
 :root{
     --bg: hsl(227, 63%, 18%);
+    --bga: hsl(227, 63%, 36%);
     --text:  hsl(42, 36%, 89%);
     --accent: hsl(42, 73%, 48%);
     --accent-transparent: hsla(42, 73%, 48%, 0.96);
@@ -63,6 +64,11 @@ h3{
 #about{
     width: 100vw;
     height: 100vh;
+    background-color: var(--bga);
+}
+
+#about > * {
+    background-color: var(--bga);
 }
 
 #cool{
@@ -76,6 +82,11 @@ h3{
     display: flex;
     place-items: center;
     gap: 2rem;
+    background-color: var(--bga);
+}
+
+.contacts > *{
+    background-color: var(--bga);
 }
 
 .link{
