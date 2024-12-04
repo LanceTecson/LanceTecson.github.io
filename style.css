@@ -61,6 +61,21 @@ h3{
     text-align: center;
 }
 
+
+#np {
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+#about > #item1 p{
+    font-size: 2rem;
+    padding: 0;
+}
+
+#lst{
+    padding-left: 1rem;
+}
+
 #about{
     width: 100vw;
     height: 100vh;
@@ -93,6 +108,7 @@ h3{
     display: inline;
     height: 3rem;
     width: auto;
+    background-color: var(--bga);
 }
 
 #resume{
@@ -171,5 +187,5 @@ h3{
 }
 
 .portfolio h1{
-    text-align:center;
+    text-align: center;
 }
