@@ -1,87 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfol.io</title>
-    <link rel="stylesheet" href="style.css">
-	<link rel="icon" type="image/png" href="/pics/Narwhal_shiny.png">
-  </head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Portfol.io</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/png" href="/assets/Narwhal_shiny.png">
+	</head>
   <body>
-    <section id="intro">
-        <span class="container">
-			<img src="pics/me.png" id="me">
-			<div class="textCont">
-				<h1>Lance Tecson</h1>
-				<h2>B.S. Computer Engineering | University of Virginia | May 2024</h2>
-				<h2>M.S. Computer Science | Georgia Institute of Technology | (Expected) December 2026</h2>
-				<h2>Self driven, passionate, and other self flateries</h2>
-				<h2 id="count">Cannot connect to database</h2>
+		<section id="left">
+			<img src="assets/me.png" id="me-icon">
+			<div class="left-container">
+				<a href="https://github.com/LanceTecson" target="_blank"><img src="assets/gh.png" class="left-item"></a>
+				<a href="mailto:lanceoliver.a.tecson@gmail.com" target="_blank"><img src="assets/gm.png" class="left-item"></a>
+				<a href="https://www.linkedin.com/in/lance-tecson-0239731b0/" target="_blank"><img src="assets/in.png" class="left-item"></a>
+				<a href="/assets/resume.pdf" target="_blank" id="resume">Resume</a>
 			</div>
-        </span>
-    </section>
-    <section id="about">
-		<h2>Back in highschool, I self taught coding basics to one up a friend.<br>
-			To prove my point, I got a B.S. in Computer Engineering from UVa in May, 2024.</h2>
-		<p id="np">My favorite project that I've worked on was my senior capstone, a self balancing bike. The comradery built from sessions
-			of laughing while questioning the plausibility of our project, the self teaching required to learn how to interact 
-			with the sensors individually and as a system kept me going through the grueling work.<br>
-		Outside of academics and work, I enjoy:</p>
-			<p id="lst">&emsp;💪 Fitness (365, 255, 475)</p>
-			<p id="lst">&emsp;🤓 League of Legends (I will not play on company time!)</p>
-			<p id="lst">&emsp;🧵 Fashion</p>
-			<p id="lst">&emsp;🔪 Cooking (Unlike League of legends, I am good at this)</p>
-			<p id="lst">&emsp;🎶 Hiphop, Indie, & EDM</p>
-		<p id="np">Particular interests: embedded systems, control systems, ML, and FPGA.</p>
-		<div class="contacts">
-			<p id="np">Contact me: </p>
-			<a href="https://github.com/LanceTecson" target="_blank"><img src="pics/gh.png" class="link"></a>
-			<a href="mailto:lanceoliver.a.tecson@gmail.com" target="_blank"><img src="pics/gm.png" class="link"></a>
-			<a href="https://www.linkedin.com/in/lance-tecson-0239731b0/" target="_blank"><img src="pics/in.png" class="link"></a>
-			<a href="/pics/resume2.pdf" target="_blank" id="resume">Resume</a>
-		</div>
-    </section>
-    <section class="portfolio">
-		<h1>Work Highlights</h1>
-		<div id="items">
-			<div class="item">
-				<img src="pics/bike.png">
-				<a href="https://github.com/LanceTecson/5th-Gear" target="_blank">
-					<div class="overlay">
-						<h1>Self Balancing Bike</h1>
-						<p>Self balancing bike that used an STM32 microcontroller to manage communication between and 
-							calculate data from several peripherals to balance a custom bike</p>
-						<p><br></p>
-						<b>Control Systems, Embedded, Communication Protocols, Bluetooth, Marketing</b>
-					</div>
-				</a>
+			<div id="visits">Current as of<br><span id="date">DATE</span></div>
+			<div id="visits">Site Visits:<br><span id="visits-num">NUMBER</span></div>
+		</section>
+		<section id="top">
+			<span id="top-container">Lance Tecson</span>
+			<div id="top-container">
+				<div id="school">M.S. Computer Science | Georgia Institute of Technology | December 2026</div>
+				<div id="school">B.S. Computer Engineering | University of Virginia | May 2024</div>
 			</div>
-			<div class="item">
-				<img src="pics/cpu.png">
-				<a href="https://github.com/LanceTecson/ECE4435" target="_blank">
-					<div class="overlay">
-						<h1>64-bit RISC-V CPU with UART Capabilities</h1>
-						<p>CPU capable of executing entire RISC-V instruction set and 
-							transmitting & receiving 3 bytes of data in 0.1 ms written in verilog</p>
-						<p><br></p>
-						<b>Verilog, FPGA, Test Writing, RISCV</b>
-					</div>
-				</a>
+		</section>
+		<section id="content">
+			<div id="me">
+					<h2>Back in highschool, I self taught coding basics to one up a friend.<br>
+						To prove my point, I got a B.S. in Computer Engineering from UVa in May, 2024.
+					</h2>
+					<p>&emsp;My favorite project that I've worked on was my senior capstone, a self balancing bike. The comradery built from sessions
+						of laughing while questioning the plausibility of our project, the self teaching required to learn how to interact 
+						with the sensors individually and as a system kept me going through the grueling work.<br>
+						Outside of academics and work, I enjoy:
+					</p>
+					<p>&emsp;💪 Fitness (365, 255, 475)</p>
+					<p>&emsp;🤓 League of Legends (I will not play on company time!)</p>
+					<p>&emsp;🧵 Fashion</p>
+					<p>&emsp;🔪 Cooking (Unlike League of legends, I am good at this)</p>
+					<p>&emsp;🎶 Hiphop, Indie, & EDM</p>
+					<p id="interests">Particular interests: embedded systems, control systems, ML, and FPGA.</p>
 			</div>
-			<div class="item">
-				<img src="pics/eth.png">
-				<a href="https://github.com/LanceTecson/OTF-Coin" target="_blank">
-					<div class="overlay">
-						<h1>Multiple Ethereum Projects</h1>
-						<p>Designed cryptocurrency, NFT, DEX, DAO, and MetaMask Web3 site</p>
-						<p><br></p>
-						<b>Solidity, Web3, HTML, JS</b>
-					</div>
-				</a>
+			<div id="work">
+				<h2>Work Highlights</h2>
+				<div id="items">
+					<a href="https://github.com/LanceTecson/LanceTecson.github.io" target="_blank" id="item">
+						<img src="assets/aws.png">
+						<span class="overlay-container">
+							<h3 class="overlay-title">AWS Hosted Portfolio</h3>
+							<p class="overlay-skills">AWS, APIs, boto3, CICD Pipelining, HTML/CSS/JS</p>
+							<p class="overlay-description">
+								Cloud hosted portfolio using the AWS technologies: CloudFront, S3,
+								API Gateway, Lambda, and DynamoDB; Lambda expression written using boto3;
+								Github Actions for CI/CD pipelining
+							</p>
+						</span>
+					</a>
+					<a href="https://github.com/LanceTecson/5th-Gear" target="_blank" id="item">
+						<img src="assets/bike.png">
+						<span class="overlay-container">
+							<h3 class="overlay-title">Self-Balancing Bike</h3>
+							<p class="overlay-skills">Control Systems, Embedded Systems, Marketing, Agile</p>
+							<p class="overlay-description">
+								CAD 3D printed model bike that used an STM32 to manage communication between 
+								and calculate data from several peripherals to mechanically balance itself
+							</p>
+						</span>
+					</a>
+					<a href="https://github.com/LanceTecson/ECE4435" target="_blank" id="item">
+						<img src="assets/cpu.png">
+						<span class="overlay-container">
+							<h3 class="overlay-title">64-Bit RISCV CPU with UART Capabilities</h3>
+							<p class="overlay-skills">Verilog, FPGA, Test Writing, RISCV</p>
+							<p class="overlay-description">
+								CPU capable of executing entire RISC-V instruction set and 
+								transmitting & receiving 3 bytes of data in 0.1 ms written in verilog
+							</p>
+						</span>
+					</a>
+					<a href="https://github.com/LanceTecson/OTF-Coin" target="_blank" id="item">
+						<img src="assets/eth.png">
+						<span class="overlay-container">
+							<h3 class="overlay-title">Multiple Ethereum Projects</h3>
+							<p class="overlay-skills">Solidity, Web3, HTML/CSS/JS, Blockchain</p>
+							<p class="overlay-description">
+								Designed cryptocurrency, NFT, DEX, DAO, and MetaMask Web3 site
+							</p>
+						</span>
+					</a>
+				</div>
 			</div>
-		</div>
-    </section>
-	<script src="script.JS"></script>
+		</section>
+
+		<script src="script.js"></script>
   </body>
 </html>
